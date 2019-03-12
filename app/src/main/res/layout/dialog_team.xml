@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_subject"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonTeamBatman"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@mipmap/bat" />
+
+            <ImageButton
+                android:id="@+id/buttonTeamSuperman"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@mipmap/sup" />
+
+            <ImageButton
+                android:id="@+id/buttonTeamFlash"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="@mipmap/flash" />
+
+            <ImageButton
+                android:id="@+id/buttonTeamMignon"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:background="@mipmap/min" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNameTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/NameTeam"
+            android:maxLength="16"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/editTextNamePlayer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/namePlayerOne"
+            android:maxLength="16"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/editTextNamePlayer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/namePlayerTwo"
+            android:maxLength="16"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <com.manojbhadane.QButton
+            android:id="@+id/buttonCancelDialogTeam"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            app:qb_backgroundColor="@color/red"
+            app:qb_strokeColor="@color/btnGreenDark" />
+
+        <com.manojbhadane.QButton
+            android:id="@+id/buttonOkDialogTeam"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="@string/OK"
+            android:textColor="@color/white"
+            app:qb_backgroundColor="@color/green" />
+    </LinearLayout>
+</LinearLayout>

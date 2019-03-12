@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Fragments.FragmentStart">
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Alias"
+        android:textColor="@android:color/black"
+        android:textSize="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <com.manojbhadane.QButton
+            android:id="@+id/buttonSettingAppFragment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:text="@string/Play"
+            android:textColor="@color/white"
+            app:qb_backgroundColor="@color/green"
+            app:qb_radius="100"
+            app:qb_strokeColor="@color/darkGreen"
+            app:qb_strokeWidth="5" />
+
+
+        <com.manojbhadane.QButton
+            android:id="@+id/buttonFAQ"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:text="@string/FAQ"
+            android:textColor="@color/white"
+            app:qb_backgroundColor="@color/green"
+            app:qb_radius="100"
+            app:qb_strokeColor="@color/darkGreen"
+            app:qb_strokeWidth="5" />
+    </LinearLayout>
+
+</FrameLayout>

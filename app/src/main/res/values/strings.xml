@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyTestAliasApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Play">Играть</string>
+    <string name="FAQ">О игре</string>
+    <string name="Teams">Команды</string>
+    <string name="number_Of_Words">Количество слов</string>
+    <string name="number_Of_Seconds">Количество секунд</string>
+    <string name="pieced">шт.</string>
+    <string name="seconds">сек.</string>
+    <string name="titleInfoFSettingApp">Выберите количество слов и</string>
+    <string name="messageInfoFSettingApp">"                время раунда"</string>
+    <string name="addTeam">Добавить команду</string>
+    <string name="categories">Категории</string>
+    <string name="namePlayerOne">Имя Первого игрока</string>
+    <string name="namePlayerTwo">Имя Второго игрока</string>
+    <string name="NameTeam">Имя команды</string>
+    <string name="cancel">Закрыть</string>
+    <string name="OK">Добавить</string>
+    <string name="SettingQuantity1">Выберите количество слов и время раунда</string>
+    <string name="SettingQuantity2"> </string>
+    <string name="titleInfoTeams">"      Введите информацию о"</string>
+    <string name="messageInfoTeams">"                   командах"</string>
+</resources>

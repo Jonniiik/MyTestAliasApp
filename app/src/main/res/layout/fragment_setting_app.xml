@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Fragments.FragmentSettingApp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_Of_Words"
+                android:textColor="#4CAF50"
+                android:textSize="30dp" />
+
+            <com.github.florent37.androidslidr.Slidr
+                android:id="@+id/sliderWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:slidr_region_leftColor="#4CAF50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_Of_Seconds"
+                android:textColor="#F44336"
+                android:textSize="30dp" />
+
+            <com.github.florent37.androidslidr.Slidr
+                android:id="@+id/sliderTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:slidr_region_leftColor="#F44336" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.manojbhadane.QButton
+        android:id="@+id/buttonTeamsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/Teams"
+        android:textColor="@color/white"
+        app:qb_backgroundColor="@color/green"
+        app:qb_radius="100"
+        app:qb_strokeColor="@color/darkGreen"
+        app:qb_strokeWidth="5" />
+
+    <com.rafaelbarbosatec.archivimentview.AchievementView
+        android:id="@+id/achievementViewTimeAndWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:ac_color="@color/colorPrimaryDark"
+        app:ac_text_color="@color/colorAccent" />
+
+</RelativeLayout>
